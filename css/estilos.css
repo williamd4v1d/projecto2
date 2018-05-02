@@ -1,4 +1,12 @@
+body{
+  font-family: 'Dancing Script';
+  background-color: #02010a;
+}
 .container {
+  display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -9,40 +17,68 @@
 }
 .c1 {
 	color: black;
-	background-color: #3b4ce0;
+  border-radius: 10px 10px 0px 0px;
+	background-color: #5b7989;
 }
-.c2 {
+.c1 h1{
+  color: white;
+  text-shadow: 2px 2px 3px #02010a;
+  font-size: 2em;
+}
+.c1 a{
+  text-decoration: none;
+}
+.c2,.c3,.c4,.c5 {
 	color: black;
-	background-color: #F4F1BB;
-}
-.c3 {
-	color: black;
-	background-color: #9BC1BC;
-}
-.c4 {
-	color: black;
-	background-color: #36C9C6;
-}
-.c5 {
-	color: white;
-	background-color: #ED6A5A;
+	background-color: #82c3a6;
 }
 .c4 img {
+  text-shadow: 1px 2px 3px #02010a;
   width: 100%;
 }
-.container {
-	display: -webkit-flex;
+.f2 {
+	color: white;
+  font-size: 1em;
+  text-align: justify;
+}
+.f2 a{
+  text-decoration: none;
+  color: black;
+}
+.f3 img{
+  width: 50px;
+}
+footer {
+  display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
+  background-color: #C6d5c5;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+  border-radius: 0px 0px 10px 10px;
 }
-@media (min-width: 600px) {
+footer div {
+	box-sizing: border-box;
+	padding: 10px;
+}
+@media (min-width: 400px) {
 	.c1{
 		width: 100%;
 	}
-	.c4{
+  .nav{
+    float: left;
+    width: 100%;
+    font-size: 1.5em;
+    color: white;
+  }
+    .c4{
 		width: 100%;
 	}
+  .f1,.f2,.f3,.f4{
+    width: 100%;
+  }
 }
 @media (min-width: 800px) {
   .c1{
@@ -50,7 +86,7 @@
 	}
   .nav{
     float: right;
-    width: 30%;
+    width: 100%;
     font-size: 2em;
     color: white;
   }
@@ -68,38 +104,4 @@
   .f1,.f2,.f3,.f4{
     width: 25%;
   }
-}
-.f3 img{
-  width: 50px;
-}
-footer {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
-footer div {
-	box-sizing: border-box;
-	padding: 10px;
-}
-footer {
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
-}
-.f1 {
-	color: black;
-	background-color: #3b4ce0;
-}
-.f2 {
-	color: black;
-	background-color: #F4F1BB;
-}
-.f3 {
-	color: black;
-	background-color: #9BC1BC;
-}
-.f4 {
-	color: black;
-	background-color: #42d5c2;
 }
